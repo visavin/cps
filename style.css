@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'TT Lakes';
+    src: local('TT Lakes'), url("./TTLakes/TTLakes-Regular.woff") format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: local('TT Lakes'), url("./TTLakes/TTLakes-Medium.woff") format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'TT Lakes';
+    src: local('TT Lakes'), url("./TTLakes/TTLakes-Bold.woff") format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: "TT Lakes", sans-serif;
+    color: #1B1C21;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header-container {
+    height: 88px;
+    background-color: #FFFFFF;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #D9FFF5;
+}
+
+.header-container__column {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex: 1 0 auto;
+}
+
+.container {
+    background: #F8F8F8;
+    min-height: 509px;
+    display: flex;
+    flex-flow: column;
+}
+
+h1 {
+    font-size: 28px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.title {
+    padding: 0 16px;
+    margin: 24px 0;
+    border-left: 4px solid #41F6D7;
+}
+
+.slide-menu {
+    display: flex;
+    justify-content: space-between;
+    overflow-x: scroll;
+    padding: 0 16px 24px 16px;
+}
+
+.slide-menu__button {
+    flex: 1 0 auto;
+    align-items: center;
+    padding: 8px;
+    margin: 0 8px 0 8px;
+}
+
+.slide-menu__button--active {
+    background: #FFFFFF;
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+}
+
+.slide-menu__button a {
+    color: #7E7E82;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.about-text__icon {
+    background-image: url(img/main/expand.svg);
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.main-container {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-container__item {
+    margin: 0;
+}
+
+.about-text {
+    margin: 0 16px 16px 16px;
+}
+
+.about-text a {
+    color: #1B1C21;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.about-text p {
+    display: block;
+    margin-block-start: 0;
+    margin-block-end: 16px;
+}
+
+.about-img {
+}
