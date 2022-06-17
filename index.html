@@ -10,18 +10,30 @@
 
 <header>
     <div class="header-container">
-        <div class="header-container__column">
+        <div class="header-container__column left-column">
             <div class="header-container__item menu">
                 <button class="menu__button"></button>
+            </div>
+            <div class="header-container__item header-container__item--tablet divider">
+                <div class="divider__img"></div>
             </div>
             <div class="header-container__item logo">
                 <img class="logo__img" src="img/header/logo.svg" alt="Логотип">
             </div>
+        </div>
+        <div class="header-container__column right-column">
+            <div class="header-container__item header-container__item--tablet call">
+                <button class="call__button"></button>
+            </div>
+            <div class="header-container__item header-container__item--tablet chat">
+                <button class="chat__button"></button>
+            </div>
+            <div class="header-container__item header-container__item--tablet profile">
+                <button class="profile__button"></button>
+            </div>
             <div class="header-container__item divider">
                 <div class="divider__img"></div>
             </div>
-        </div>
-        <div class="header-container__column">
             <div class="header-container__item repair">
                 <button class="repair__button"></button>
             </div>
@@ -45,15 +57,31 @@
                 <div class="slide-menu__button">
                     <a href="">Дополнительные услуги</a>
                 </div>
+                <div class="slide-menu__button">
+                    <a href="">Цены на услуги</a>
+                </div>
+                <div class="slide-menu__button">
+                    <a href="">Специальные цены</a>
+                </div>
             </div>
         </div>
         <div class="main-container">
             <div class="main-container__item about-text">
-                <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-                <span class="about-text__icon"></span><a href="#">Читать далее</a>
+                <p class="about-text__text">
+                    Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+                </p>
+                <p class="about-text__text about-text__text--tablet">
+                    Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера
+                </p>
+                <span class="about-text__icon"></span><a class="about-text__link" href="#">Читать далее</a>
             </div>
             <div class="main-container__item about-img">
-                <img src="img/main/about.png" alt="About image">
+                <picture>
+                    <source srcset="img/main/about_532.png" type="image/png" media="(min-width:1120px)">
+                    <source srcset="img/main/about_360.png" type="image/png" media="(min-width:768px)">
+                    <source srcset="img/main/about_320.png" type="image/png" media="(max-width:768px)">
+                    <img src="img/main/about_532.png" alt="About image">
+                </picture>
             </div>
         </div>
     </div>
