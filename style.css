@@ -45,14 +45,61 @@ body {
     width: auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     border-bottom: 1px solid #D9FFF5;
 }
 
 .header-container__column {
     display: flex;
-    align-items: center;
     justify-content: space-evenly;
+    align-items: center;
     flex: 1 0 auto;
+    /*border: chartreuse 1px dotted;*/
+}
+
+.header-container__item {
+    /*border: blueviolet 1px dashed;*/
+}
+
+.menu__button {
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    border: 0;
+    background: no-repeat url(img/header/burger.svg);
+    width: 40px;
+    height: 40px;
+}
+
+.logo__img {
+    vertical-align: middle;
+}
+
+.divider__img {
+    vertical-align: middle;
+    background: no-repeat url(img/header/divider.svg);
+    width: 2px;
+    height: 32px;
+}
+
+.repair__button {
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    border: 0;
+    background: no-repeat url(img/header/repair.svg);
+    width: 40px;
+    height: 40px;
+}
+
+.checkstatus__button {
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    border: 0;
+    background: no-repeat url(img/header/checkstatus.svg);
+    width: 40px;
+    height: 40px;
 }
 
 .container {
