@@ -46,7 +46,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #D9FFF5;
     padding: 0 16px;
 }
 
@@ -152,10 +151,20 @@ body {
     min-height: 509px;
     display: flex;
     flex-flow: column;
+    border-top: 1px solid #D9FFF5;
+}
+
+.title-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*border: chartreuse 1px dotted;*/
 }
 
 h1 {
     font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -0.6px;
     margin-block-start: 0;
     margin-block-end: 0;
     margin-inline-start: 0;
@@ -164,24 +173,49 @@ h1 {
     font-style: normal;
 }
 
-.title {
-    padding: 0 16px;
+.title-menu__title {
+    padding: 0 16px 0 12px;
     margin: 24px 0 0 0;
     border-left: 4px solid #41F6D7;
 }
 
+.main-menu {
+    display: none;
+}
+
+.main-menu__item.repair::before {
+    content: "Оставить заявку";
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    font-weight: 500;
+    margin-right: 8px;
+}
+
+.main-menu__item.checkstatus::before {
+    content: "Статус ремонта";
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    font-weight: 500;
+    margin-right: 9px;
+}
+
 .slide-menu {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: center;
     overflow-x: scroll;
     padding: 24px 16px;
+    gap: 10.26px;
 }
 
 .slide-menu__button {
     flex: 1 0 auto;
-    align-items: center;
-    padding: 8px;
-    margin: 0 8px 0 8px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    padding: 8px 9.3px 8px 16.54px;
 }
 
 .slide-menu__button--active {
@@ -212,13 +246,26 @@ h1 {
 
 .about-text__text {
     line-height: 18px;
+    letter-spacing: 0.2px;
     display: block;
     margin-block-start: 0;
     margin-block-end: 16px;
 }
 
 .about-text__text--tablet {
+    line-height: 20px;
+    letter-spacing: 0.2px;
     display: none;
+    margin-block-start: 0;
+    margin-block-end: 10px;
+}
+
+.about-text__text--wide {
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    display: none;
+    margin-block-start: 0;
+    margin-block-end: 13.78px;
 }
 
 .about-text__icon {
@@ -233,6 +280,8 @@ h1 {
     color: #1B1C21;
     text-decoration: none;
     font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
     font-weight: 500;
 }
 
@@ -246,18 +295,15 @@ h1 {
 
     .header-container {
         padding: 0 24px;
+        margin-right: 16px;
     }
 
     .main-container {
         flex-wrap: nowrap;
     }
 
-    .about-text__text--tablet {
-        display: block;
-    }
-
-    .title {
-        padding: 0 24px;
+    .title-menu__title {
+        padding-left: 20px;
     }
 
     .slide-menu {
@@ -269,10 +315,76 @@ h1 {
     }
 
     .about-text__text {
-        line-height: 20px;
+        display: none;
+    }
+
+    .about-text__text--tablet {
+        display: block;
     }
 
     .about-img {
         margin-right: 25px;
+    }
+
+    .container {
+        margin-right: 15px;
+    }
+}
+
+@media screen and (min-width: 1120px) {
+    .container {
+        border: 0;
+    }
+
+    .header-container {
+        display: none;
+    }
+
+    .nav-container {
+        margin: 42px 25px 7px 1px;
+    }
+
+    .title-menu__title {
+        margin: 0;
+        padding-left: 30px;
+        /*border-left: 3px solid #41F6D7;*/
+    }
+
+    .main-menu {
+        display: flex;
+        padding-right: 7px;
+        gap: 32px;
+        /*border: blueviolet 1px dashed;*/
+    }
+
+    .slide-menu {
+        padding: 8.37px 0 3px 32px;
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+
+    .slide-menu__button {
+        flex: 0 1 auto;
+    }
+
+    .about-text {
+        margin: 9.22px 36px 0 34px;
+    }
+
+    .about-text__text {
+        display: none;
+    }
+
+    .about-text__text--tablet {
+        display: none;
+    }
+
+    .about-text__text--wide {
+        display: block;
+    }
+
+    .about-img {
+        margin-right: 28.65px;
+        margin-bottom: 49px;
     }
 }
