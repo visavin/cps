@@ -1,113 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-    <title>Макет</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <title>Макет</title>
 </head>
 <body>
-
 <header>
-    <div class="header-container">
-        <div class="header-container__column left-column">
-            <div class="header-container__item menu">
-                <button class="menu__button"></button>
-            </div>
-            <div class="header-container__item header-container__item--tablet divider">
-                <div class="divider__img"></div>
-            </div>
-            <div class="header-container__item logo">
-                <img class="logo__img" src="img/header/logo.svg" alt="Логотип">
-            </div>
-        </div>
-        <div class="header-container__column right-column">
-            <div class="header-container__item header-container__item--tablet call">
-                <button class="call__button"></button>
-            </div>
-            <div class="header-container__item header-container__item--tablet chat">
-                <button class="chat__button"></button>
-            </div>
-            <div class="header-container__item header-container__item--tablet profile">
-                <button class="profile__button"></button>
-            </div>
-            <div class="header-container__item divider">
-                <div class="divider__img"></div>
-            </div>
-            <div class="header-container__item repair">
-                <button class="repair__button"></button>
-            </div>
-            <div class="header-container__item checkstatus">
-                <button class="checkstatus__button"></button>
-            </div>
-        </div>
-    </div>
+  <div class="header-container">
+    <ul class="header-container__column left-column">
+      <li class="header-container__item menu">
+        <button class="menu__button" title="Меню"></button>
+      </li>
+      <li class="header-container__item header-container__item--tablet divider">
+        <div class="divider__img"></div>
+      </li>
+      <li class="header-container__item logo">
+        <img class="logo__img" src="./assets/img/upload/logo.svg" alt="Логотип">
+      </li>
+    </ul>
+    <ul class="header-container__column right-column">
+      <li class="header-container__item header-container__item--tablet call">
+        <button class="call__button" title="Позвонить"></button>
+      </li>
+      <li class="header-container__item header-container__item--tablet chat">
+        <button class="chat__button" title="Написать"></button>
+      </li>
+      <li class="header-container__item header-container__item--tablet profile">
+        <button class="profile__button" title="Профиль"></button>
+      </li>
+      <li class="header-container__item divider">
+        <div class="divider__img"></div>
+      </li>
+      <li class="header-container__item repair">
+        <button class="repair__button" title="Оставить заявку"></button>
+      </li>
+      <li class="header-container__item checkstatus">
+        <button class="checkstatus__button" title="Статус ремонта"></button>
+      </li>
+    </ul>
+  </div>
 </header>
-
 <main>
-    <div class="container">
-        <div class="nav-container">
-            <div class="title-menu">
-                <div class="title-menu__title">
-                    <h1>Услуги и сервисы</h1>
-                </div>
-                <div class="title-menu__menu main-menu">
-                    <div class="main-menu__item repair">
-                        <button class="repair__button"></button>
-                    </div>
-                    <div class="main-menu__item checkstatus">
-                        <button class="checkstatus__button"></button>
-                    </div>
-                </div>
-            </div>
-            <div class="slide-menu">
-                <div class="slide-menu__button slide-menu__button--active">
-                    <a href="">Ремонтируемые устройства</a>
-                </div>
-                <div class="slide-menu__button">
-                    <a href="">Дополнительные услуги</a>
-                </div>
-                <div class="slide-menu__button">
-                    <a href="">Цены на услуги</a>
-                </div>
-                <div class="slide-menu__button">
-                    <a href="">Специальные цены</a>
-                </div>
-                <div class="slide-menu__button">
-                    <a href="">Адреса сервисных центров</a>
-                </div>
-                <div class="slide-menu__button">
-                    <a href="">Отзывы</a>
-                </div>
-            </div>
+  <div class="container">
+    <div class="nav-container">
+      <div class="title-menu">
+        <div class="title-menu__title">
+          <h1>Услуги и сервисы</h1>
         </div>
-        <div class="main-container">
-            <div class="main-container__item about-text">
-                <p class="about-text__text">
-                    Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
-                </p>
-                <p class="about-text__text--tablet">
-                    Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.<br>
-                    <br>
-                    Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера
-                </p>
-                <p class="about-text__text--wide">
-                    Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.<br>
-                    <br>
-                    Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
-                </p>
-                <span class="about-text__icon"></span><a class="about-text__link" href="#">Читать далее</a>
-            </div>
-            <div class="main-container__item about-img">
-                <picture>
-                    <source srcset="img/main/about_532.png" type="image/png" media="(min-width:1120px)">
-                    <source srcset="img/main/about_360.png" type="image/png" media="(min-width:768px)">
-                    <source srcset="img/main/about_320.png" type="image/png" media="(max-width:768px)">
-                    <img src="img/main/about_532.png" alt="About image">
-                </picture>
-            </div>
-        </div>
+        <ul class="title-menu__menu main-menu">
+          <li class="main-menu__item repair">
+            <button class="repair__button" title="Оставить заявку"></button>
+          </li>
+          <li class="main-menu__item checkstatus">
+            <button class="checkstatus__button" title="Статус ремонта"></button>
+          </li>
+        </ul>
+      </div>
+      <ul class="slide-menu">
+        <li class="slide-menu__button slide-menu__button--active">
+          <a href="">Ремонтируемые устройства</a>
+        </li>
+        <li class="slide-menu__button">
+          <a href="">Дополнительные услуги</a>
+        </li>
+        <li class="slide-menu__button">
+          <a href="">Цены на услуги</a>
+        </li>
+        <li class="slide-menu__button">
+          <a href="">Специальные цены</a>
+        </li>
+        <li class="slide-menu__button">
+          <a href="">Адреса сервисных центров</a>
+        </li>
+        <li class="slide-menu__button">
+          <a href="">Отзывы</a>
+        </li>
+      </ul>
     </div>
+    <div class="main-container">
+      <div class="main-container__item about-text">
+        <p class="about-text__text">
+          Мы являемся авторизованным сервисным центром по ремонту техники Dell.
+          Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+        </p>
+        <p class="about-text__text--tablet">
+          Мы являемся авторизованным сервисным центром по ремонту техники Dell.
+          Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.<br>
+          <br>
+          Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера
+        </p>
+        <p class="about-text__text--wide">
+          Мы являемся авторизованным сервисным центром по ремонту техники Dell.
+          Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.<br>
+          <br>
+          Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера,
+          что подтверждает большое количество постоянных клиентов.
+          Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
+        </p>
+        <span class="about-text__icon"></span><a class="about-text__link" href="#">Читать далее</a>
+      </div>
+      <div class="main-container__item about-img">
+        <picture>
+          <!--<source srcset="img/main/about_532.png" type="image/png" media="(min-width:1120px)">-->
+          <!--<source srcset="img/main/about_360.png" type="image/png" media="(min-width:768px)">-->
+          <!--<source srcset="img/main/about_320.png" type="image/png" media="(max-width:768px)">-->
+          <img src="./assets/img/upload/about_532.png" alt="About image">
+        </picture>
+      </div>
+    </div>
+  </div>
 </main>
 </body>
 </html>
