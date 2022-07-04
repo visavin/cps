@@ -457,7 +457,6 @@ h1 {
   background: no-repeat url('./assets/img/icons/header/close.svg');
   width: 40px;
   height: 40px;
-  transition-duration: 500ms;
 }
 
 .search__button {
@@ -571,6 +570,10 @@ h1 {
 
 .lang__item--active a {
   color: #7E7E82;
+}
+
+button {
+  transition-duration: 250ms;
 }
 
 button:hover {
