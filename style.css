@@ -597,8 +597,6 @@ button {
 }
 
 button:not(.dropdown):hover {
-  /*filter: sepia(0.5);*/
-  /*background: rgba(65, 246, 215, 1);*/
   filter: invert(100%) contrast(200%);
 }
 
@@ -640,18 +638,13 @@ button:not(.dropdown):active {
 }
 
 .repair-brands__wrapper {
-  /*height: 154px;*/
-  /*display: flex;*/
-  /*overflow: hidden;*/
 }
 
 .repair-brands__slide {
-  /*flex: 0 0 auto;*/
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
-  /*margin: 16px 0 66px 16px !important;*/
   width: 240px !important;
   height: 72px;
   background: #FFFFFF;
@@ -724,7 +717,6 @@ button:not(.dropdown):active {
   }
 
   .repair-brands__slide {
-    /*box-sizing: border-box;*/
     width: 224px !important;
   }
 
