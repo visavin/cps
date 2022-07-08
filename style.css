@@ -597,7 +597,8 @@ button {
 }
 
 button:not(.dropdown):hover {
-  filter: invert(100%) contrast(200%);
+  transform: scale(110%);
+  filter: sepia(0.5);
 }
 
 button:not(.dropdown):focus{
